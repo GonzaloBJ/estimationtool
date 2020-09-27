@@ -1,0 +1,42 @@
+.full-width-table {
+  width: 100%;
+}
+
+.full-card {
+  margin: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+th.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+}
+
+.row-icon {
+  color: #3f51b5
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.button-bar {
+  float: right;
+  margin-right: 16px;
+  margin-bottom: 10px;
+}
+
+.title-bar {
+  float: left; 
+  margin-top: 10px;
+}

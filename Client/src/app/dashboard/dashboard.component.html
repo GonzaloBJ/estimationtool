@@ -1,6 +1,51 @@
 <div class="grid-container">
   <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-list cols="3" rowHeight="500px">
+    <mat-grid-tile>
+      <div class="mat-elevation-z8">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Estimate Proyect</mat-card-title>
+          <mat-card-subtitle>It's a Quick proyect estimate</mat-card-subtitle>
+        </mat-card-header>
+          <div mat-card-image class="card-icon-block">
+            <button routerLink="/" routerLinkActive="active" mat-flat-button class="card-button-link primary">
+              <mat-icon class="card-icon-button">quickreply</mat-icon>
+            </button>
+          </div>
+        <mat-card-content></mat-card-content>
+      </mat-card>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Parts Manager</mat-card-title>
+          <mat-card-subtitle>Management the parts of a proyect estimate</mat-card-subtitle>
+        </mat-card-header>
+        <div mat-card-image class="card-icon-block">
+          <button routerLink="/partsmanager" routerLinkActive="active" mat-flat-button class="card-button-link success">
+            <mat-icon class="card-icon-button">view_list</mat-icon>
+          </button>
+        </div>
+        <mat-card-content></mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Settings</mat-card-title>
+          <mat-card-subtitle>Configuration and tool preferences</mat-card-subtitle>  
+        </mat-card-header>
+        <div mat-card-image class="card-icon-block">
+          <button routerLink="/" routerLinkActive="active" mat-flat-button class="card-button-link disable">
+            <mat-icon class="card-icon-button">settings</mat-icon>
+          </button>
+        </div>
+        <mat-card-content></mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
         <mat-card-header>

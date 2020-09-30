@@ -21,6 +21,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatTabsModule} from '@angular/material/tabs';
 import { PartsManagerModule } from './parts-manager/parts-manager.module';
+import {MatRippleModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PartsManagerModule } from './parts-manager/parts-manager.module';
     MatCardModule,
     MatMenuModule,
     MatSortModule,
-    PartsManagerModule
+    PartsManagerModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

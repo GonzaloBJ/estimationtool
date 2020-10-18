@@ -1,69 +1,53 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="3" rowHeight="500px">
-    <mat-grid-tile>
-      <div class="mat-elevation-z8">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Estimate Proyect</mat-card-title>
-          <mat-card-subtitle>It's a Quick proyect estimate</mat-card-subtitle>
-        </mat-card-header>
-          <div mat-card-image class="card-icon-block">
-            <button routerLink="/" routerLinkActive="active" mat-flat-button class="card-button-link primary">
-              <mat-icon class="card-icon-button">quickreply</mat-icon>
-            </button>
-          </div>
-        <mat-card-content></mat-card-content>
-      </mat-card>
-    </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Parts Manager</mat-card-title>
-          <mat-card-subtitle>Management the parts of a proyect estimate</mat-card-subtitle>
-        </mat-card-header>
-        <div mat-card-image class="card-icon-block">
-          <button routerLink="/partsmanager" routerLinkActive="active" mat-flat-button class="card-button-link success">
-            <mat-icon class="card-icon-button">view_list</mat-icon>
-          </button>
-        </div>
-        <mat-card-content></mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Settings</mat-card-title>
-          <mat-card-subtitle>Configuration and tool preferences</mat-card-subtitle>  
-        </mat-card-header>
-        <div mat-card-image class="card-icon-block">
-          <button routerLink="/" routerLinkActive="active" mat-flat-button class="card-button-link disable">
-            <mat-icon class="card-icon-button">settings</mat-icon>
-          </button>
-        </div>
-        <mat-card-content></mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    <h1 class="mat-h1">Dashboard</h1>
+    <mat-grid-list cols="3" rowHeight="500px">
+        <mat-grid-tile>
+            <div class="mat-elevation-z8">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-card-title>Estimate Proyect</mat-card-title>
+                        <mat-card-subtitle>It's a Quick proyect estimate</mat-card-subtitle>
+                    </mat-card-header>
+                    <div mat-card-image class="card-icon-block">
+                        <button routerLink="/" routerLinkActive="active" mat-flat-button class="card-button-link primary">
+                            <mat-icon class="card-icon-button">quickreply</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-content></mat-card-content>
+                </mat-card>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="mat-elevation-z8">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-card-title>Feature Manager</mat-card-title>
+                        <mat-card-subtitle>Manage the feature set</mat-card-subtitle>
+                    </mat-card-header>
+                    <div mat-card-image class="card-icon-block">
+                        <button routerLink="/featuremanager" routerLinkActive="active" mat-flat-button class="card-button-link success">
+                            <mat-icon class="card-icon-button">view_list</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-content></mat-card-content>
+                </mat-card>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="mat-elevation-z8">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-card-title>Settings</mat-card-title>
+                        <mat-card-subtitle>Configuration and tool preferences</mat-card-subtitle>
+                    </mat-card-header>
+                    <div mat-card-image class="card-icon-block">
+                        <button routerLink="/" routerLinkActive="active" mat-flat-button class="card-button-link disable">
+                            <mat-icon class="card-icon-button">settings</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-content></mat-card-content>
+                </mat-card>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

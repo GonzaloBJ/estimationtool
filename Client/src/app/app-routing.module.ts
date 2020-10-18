@@ -5,7 +5,7 @@ import { PartsManagerComponent } from './parts-manager/parts-manager.component';
 
 const routes: Routes = [
   {path: '', component: DashboardComponent},
-  {path: 'partsmanager', component: PartsManagerComponent}
+  {path: 'featuremanager', component: PartsManagerComponent}
 ];
 
 @NgModule({

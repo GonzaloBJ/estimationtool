@@ -8,7 +8,7 @@ import {ThemePalette} from '@angular/material/core';
 })
 export class PartsManagerComponent implements OnInit {
 
-  links = ['Parts Manager', 'Types Manager'];
+  links = ['Feature Manager', 'Types Manager'];
   activeLink = this.links[0];
   background: ThemePalette = 'primary';
 

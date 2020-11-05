@@ -1,0 +1,30 @@
+[{
+        "Id": 1,
+        "Name": "Front-End"
+    },
+    {
+        "Id": 2,
+        "Name": "Back-End"
+    },
+    {
+        "Id": 3,
+        "Name": "Data Base"
+    },
+    {
+        "Id": 4,
+        "Name": "BPM"
+    },
+    {
+        "Id": 5,
+        "Name": "ETL"
+    },
+    {
+        "Id": 6,
+        "Name": "Testing"
+    },
+    {
+        "Id": 7,
+        "Name": "Configuration"
+    }
+
+]

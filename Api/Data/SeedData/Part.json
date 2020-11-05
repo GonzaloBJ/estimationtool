@@ -1,0 +1,55 @@
+[{
+        "Id": 1,
+        "Description": "Cambiar un icono",
+        "PartTypeId": 1,
+        "StoryPoints": 1
+    },
+    {
+        "Id": 1,
+        "Description": "Cambio Sencillo en CSS",
+        "PartTypeId": 1,
+        "StoryPoints": 1
+    },
+    {
+        "Id": 1,
+        "Description": "Cambio Medio en CSS",
+        "PartTypeId": 1,
+        "StoryPoints": 4
+    },
+    {
+        "Id": 1,
+        "Description": "Cambio Commplejo en CSS",
+        "PartTypeId": 1,
+        "StoryPoints": 8
+    },
+    {
+        "Id": 1,
+        "Description": "Cuadro de Diálogo Modal",
+        "PartTypeId": 1,
+        "StoryPoints": 4
+    },
+    {
+        "Id": 1,
+        "Description": "Formulario",
+        "PartTypeId": 1,
+        "StoryPoints": 4
+    },
+    {
+        "Id": 1,
+        "Description": "Página Web Sencilla",
+        "PartTypeId": 1,
+        "StoryPoints": 8
+    },
+    {
+        "Id": 1,
+        "Description": "Página Web Media",
+        "PartTypeId": 1,
+        "StoryPoints": 16
+    },
+    {
+        "Id": 1,
+        "Description": "Página Web Compleja",
+        "PartTypeId": 1,
+        "StoryPoints": 40
+    }
+]

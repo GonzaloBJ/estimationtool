@@ -15,10 +15,11 @@ namespace Api.Controllers
         private readonly IGenericRepository<PartType> _partTypeRepo;
         private readonly IMapper _mapper;
 
-        public PartController(IGenericRepository<Part> partRepo, IGenericRepository<PartType> partTypeRepo)
+        public PartController(IGenericRepository<Part> partRepo, IGenericRepository<PartType> partTypeRepo, IMapper mapper)
         {
             _partRepo = partRepo;
             _partTypeRepo = partTypeRepo;
+            _mapper = mapper;
         }
 
         //Parts

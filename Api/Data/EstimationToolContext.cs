@@ -1,3 +1,4 @@
+using System.Reflection;
 using Api.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,5 +17,11 @@ namespace Api.Data
         public DbSet<Estimate> Estimate {get; set;}
         public DbSet<Proyect> Proyect {get; set;}
         public DbSet<Preferences> Preferences {get; set;}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
     }
 }

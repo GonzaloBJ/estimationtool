@@ -18,7 +18,7 @@ namespace Api.Data
                 if (!context.PartType.Any())
                 {
                     var partTypesData = 
-                        File.ReadAllText("../Data/SeedData/PartType.json");
+                        File.ReadAllText("../Api/Data/SeedData/PartType.json");
 
                     var types = JsonSerializer.Deserialize<List<PartType>>(partTypesData);
 
